@@ -99,7 +99,7 @@ public class IntegrationTest {
         Log log10 = new Log(10,eps, lnStub);
         Log log5 = new Log(5, eps, lnStub);
         Log log2 = new Log(2, eps, lnStub);
-        FinalFunction finalFunction = new FinalFunction(sin, cos, cot, log3Stub, log5Stub, log10Stub, log2Stub);
+        FinalFunction finalFunction = new FinalFunction(sin, cos, cot, log3, log5, log10, log2);
         assertEquals(Double.NaN, finalFunction.calc(0), eps);
         assertEquals(0.5822601396937379, finalFunction.calc(-1.0), eps);
         assertEquals(0.09516245519816924, finalFunction.calc(-5), eps);
